@@ -81,6 +81,11 @@
     <pathelement path="${lib.dir}/mysql-connector-java-5.1.7-bin.jar" />
   </path>
 
+  <target name="test" description="Prepare for build">
+    <tstamp/>
+    <echo level="info" message="build testing." />
+  </target>
+  
   <target name="init" description="Prepare for build">
     <tstamp/>
     <mkdir dir="${build.dir}" />
